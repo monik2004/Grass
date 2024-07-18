@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+       .nav{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+        .innernav{
+           list-style-type: none;
+            visibility: hidden;
+            position: absolute;
+       }
+       .hov:hover .innernav{
+        visibility: visible;
+       }
+
+       p{
+        visibility: hidden;
+       }
+    
+   
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contect</a></li>
+        <li class="hov">
+            Services
+            <ul class="innernav"> 
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Subscription</a></li>
+            </ul>
+        </li>
+    </ul>
+   
+</body>
+</html>

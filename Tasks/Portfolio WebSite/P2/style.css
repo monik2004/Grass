@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    background-color: rgb(215, 215, 215);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    position: sticky;
+    padding: 5px;
+}
+.imgs{
+    margin:  0 30px;
+}
+.intro{
+    margin: 8% 20%;
+}
+.intro h1{
+    
+}
+.intro h1 span{
+    font-size: 40px;
+}
+nav{
+    margin: 20px;
+    margin: 0 20%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+li{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 32px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+.skills{
+    margin: 8% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills h1{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+}
+.aboutMe{
+    margin: 0 20%;
+    padding-top: 10%;
+    min-height:80vh;
+
+}
+.aboutMe p{
+    font-size: 25px;
+    margin: 20px 0;
+}
+.contect{
+    margin: 8% 20%;
+    min-height:40vh;
+    font-size: xx-large;
+}
+@media (max-width: 678px) {
+    
+    ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    li{
+        margin: 10px;
+    }
+    .contect{
+        margin: 8% 5%;
+        font-size: x-large;
+    }
+}

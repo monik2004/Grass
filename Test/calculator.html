@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-size: xx-large;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: #938a8a;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .inp{
+            width: 60%;
+            border-radius: 2px;
+            margin-left: 20%;
+        }
+        .numRow1,.numRow2,.numRow3 , .numRow4{
+            display: flex;
+            justify-content:space-evenly ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="inp" id="display">
+        <div class="numRow1">
+            <button class="num" id="inp7">7</button>
+            <button class="num" id="inp8">8</button>
+            <button class="num" id="inp9">9</button>
+        </div>
+        <div class="numRow2">
+            <button class="num" id="inp4">4</button>
+            <button class="num" id="inp5">5</button>
+            <button class="num" id="inp6">6</button>
+        </div>
+        <div class="numRow3">
+            <!-- <button class="num" value="1" id="inp1">1</button> -->
+            <div class="num" id="inp1" onclick="enter()"> 1 </div>
+            <button class="num" id="inp2">2</button>
+            <button class="num" id="inp3">3</button>
+        </div>
+        <div class="operation numRow4">
+            <button class="num" id="opr*">*</button>
+            <button class="num" id="opr/">/</button>
+            <button class="num" id="opr+">+</button>
+            <button class="num" id="opr-">-</button>
+        </div>
+        <input type="button" onclick="claculate()" value="=">
+    </div>
+
+</body>
+<script>
+    function enter() {
+        document.getElementById('display').innerHTML =  document.getElementById("inp1").innerText;
+    }
+    function claculate() {
+        let x = document.getElementById("inp1")
+        console.log(x)
+    }
+</script>
+</html>

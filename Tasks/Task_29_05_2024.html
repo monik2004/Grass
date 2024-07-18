@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: chartreuse;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .container
+        {
+            height: 480px;
+            width: 100%;
+            display: flex;
+        }
+        .left{
+            width: 20%;
+            height: inherit;
+            background-color:aqua;
+        }
+        .right{
+            width: 80%;
+            height: inherit;
+            background-color: cadetblue;
+        }
+        .footer
+        {
+            height: 35px;
+            width: 100%;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cntect Us</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>
